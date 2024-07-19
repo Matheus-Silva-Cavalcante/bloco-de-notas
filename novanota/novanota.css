@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=LXGW+WenKai+Mono+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 300px;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.campo{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo input{    
+    padding: .5em 1em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px #4b4b4b;
+}
+
+.campo input[type=color]{
+    padding: 0 1em;
+}
+
+.input-titulo:focus-visible{
+    box-shadow: 1px 1px 4px;
+    outline: none;
+}
+
+.erro{
+    outline: 1px solid #f91d1d;
+}
+
+.campo-alerta{
+    display: flex;
+    font-size: 15px;
+    color: #f91d1d;
+}
+
+textarea{
+    padding: 10px;
+    border-radius: 0 15px 0 15px;
+    border: none;
+    box-shadow: 1px 1px 4px #4b4b4b;
+}
+
+textarea:focus-visible{
+    box-shadow: 1px 1px 4px;
+    outline: none;
+}
+
+.input-color{
+    width: 100%;
+    padding: 0 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.bnt-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn{ 
+    flex: 1;   
+    transition: .5s;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #7fffd4;  
+    box-shadow: 1px 1px 4px #4b4b4b;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #3ff3b7;
+}
+
+.btn-cancelar{
+    background-color: #dddddd;
+}
+
+.btn-cancelar:hover{
+    background-color: #ff9999;
+}

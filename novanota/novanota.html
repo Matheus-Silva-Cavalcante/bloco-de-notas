@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="novanota.css">
+    <script src="/salvarnota.js" defer></script>
+    <script src="/novanota/novanota.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="campo">
+            <label for="inputTituloNota">Título da Nota</label>
+            <input id="inputTituloNota" class="input-titulo" type="text" placeholder="Coloque o título aqui">
+
+            <div id="alertCampoVazioTitulo" class="campo-alerta" style="display:none;">
+                Por favor coloque um titulo!!
+            </div>
+            
+        </div>
+
+        <div class="campo">
+            <label for="textareaTextoNota">No que Está Pensenado?</label>
+            <textarea id="textareaTextoNota" rows="8" placeholder="Coloque o texto aqui"></textarea>
+
+            <div id="alertCampoVazioTexto" class="campo-alerta" style="display:none;">
+                Por favor escreva sua anotação!!
+            </div>
+        </div>
+        
+        <div class="campo">     
+            <label for="inputCorNota">Cor da nota:</label>
+            <input id="inputCorNota" type="color" value="#faebd7" class="input-color">
+        </div>
+
+        <div class="bnt-wrapper">
+            <button id="bntSalvarNota" class="btn">
+                Salvar
+            </button>
+
+            <button id="bntCancelarNota" class="btn btn-cancelar">
+                Cancelar
+            </button>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=LXGW+WenKai+Mono+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header>div{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.titulo{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 40px;
+    /* text-shadow: 1.5px 1.5px 4px #4b4b4b; */
+}
+
+.nova-tarefa{
+    background-color: #7fffd4;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #4b4b4b;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.nova-tarefa:hover{
+    background-color: #3ff3b7;
+}
+
+main{
+    padding: 15px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex: 1;
+}
+
+.container{    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+}
+
+.nota{  
+    border: 1px solid rgba(3, 3, 3, 0.1);      
+    background-color: antiquewhite;
+}
+
+.nota__div-excluir{
+    display: flex;
+    justify-content: end;
+}
+
+.nota-bnt-excluir{
+    transition: .5s;
+    font-size: 15px;
+    color: rgb(200, 200, 200, 0.5);
+    display: contents;
+}
+
+.nota-bnt-excluir:hover{
+    color: rgb(179, 176, 176);
+}
+
+.nota-bnt-excluir>i{
+    padding: 10px 10px 0;
+}
+
+.nota-conteudo{    
+    padding: 0 10px 10px;
+}
+
+.nota-titulo{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.nota-texto{
+    background-color: RGBA( 255, 255, 255, 0.5);
+    border-radius: 0 15px 0 15px;
+    padding: 5px;
+    height: 200px;
+    margin-top: 10px;
+    overflow: auto;
+    
+    /* box-shadow: 1px 1px 4px #dfdfdf; */
+}
+
+.nota-campo-texto{
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    overflow-wrap: anywhere;    
+}
